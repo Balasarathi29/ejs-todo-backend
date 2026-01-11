@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
 
-const url = "mongodb://localhost:27017/todoApp";
+
 
 const databaseConnection = async ()=>{
     try{
-        await mongoose.connect(url)
+        await mongoose.connect(process.env.DATABASE_URL)
         console.log("Database connected successfully");
     }catch(err){
         console.log("Database connection failed", err.message);
