@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="todo-container">
-      <h2 class="title">Todo List</h2>
+      <h2 class="title"><%= title %></h2>
       <button class="btn" onClick="window.location.href='/add-todo'">
         Add Todo
       </button>
@@ -22,16 +22,17 @@
             <th>Created At</th>
             <th>Actions</th>
           </tr>
+          <% for(let i=0; i<todos.length; i++) { %>
           <tr>
-            <td>1</td>
-            <td><input class="check-box" type="checkbox" checked="false" /></td>
-            <td>Lorem ipsum dolor sit amet.</td>
-            <td>Lorem ipsum dolor sit amet.</td>
-            <td>updated date</td>
+            <td><%= i + 1 %></td>
+            <td><input class="check-box" type="checkbox" checked="false" value="false" /></td>
+            <td><%= todos[i].title %></td>
+            <td><%= todos[i].desc %></td>
+            <td><%= moment(todos[i].updatedAt).format("MMM DD, YYYY , HH:mm:ss") %></td>
             <td><a class="action-btn" href="/update-todo">Edit</a>
             <a class="action-btn" id="delete-btn" href="/delete-todo">Delete</a></td>
-
-          </tr>
+        </tr>
+        <% } %>
         </table>
       </div>
     </div>
