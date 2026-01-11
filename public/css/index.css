@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #eaafc8, #654ea3);
+}
+.todo-container {
+  width: 800px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  border: 2px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2e1a47;
+  font-size: 35px;
+  font-weight: bold;
+}
+.btn {
+  background-color: #654ea3;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+}
+.action-btn {
+  background-color: #eaafc8;
+  color: #2e1a47;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.action-btn:hover {
+  background-color: #d18bb6;
+}
+#delete-btn:hover {
+  background-color: crimson;
+}
+.check-box {
+  width: 20px;
+  height: 20px;
+}
+.form-table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 6px;
+}
+th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 4px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.delete-block {
+  text-align: center;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  margin: 20px auto;
+}
+.dlt-btn {
+  background-color: #eaafc8;
+  color: #2e1a47;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.dlt-btn:hover {
+  background-color: #d18bb6;
+}
+.form-block {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  width: 70%;
+  margin: 20px auto;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form label {
+  font-weight: bold;
+  color: #3b3b3b;
+}
+.form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline:none;
+}
+.form-btn {
+  background-color: #654ea3;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+    margin-top: 15px;
+}
